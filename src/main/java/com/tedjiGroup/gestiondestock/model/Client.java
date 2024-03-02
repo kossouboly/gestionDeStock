@@ -7,7 +7,6 @@ import lombok.*;
 import java.util.List;
 
 @Data
-@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
@@ -19,7 +18,7 @@ public class Client extends AbstractEntity {
     private String nom;
 
     @Column(name = "prenom")
-    private String Prenom;
+    private String prenom;
 
     @Embedded
     private Adresse adresse;

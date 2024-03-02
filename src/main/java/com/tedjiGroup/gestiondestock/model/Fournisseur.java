@@ -10,7 +10,6 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 
 @Data
-@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
@@ -22,7 +21,7 @@ public class Fournisseur extends AbstractEntity {
     private String nom;
 
     @Column(name = "prenom")
-    private String Prenom;
+    private String prenom;
 
     @Embedded
     private Adresse addresse;
